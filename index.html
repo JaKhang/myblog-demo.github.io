@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.1.1-web/css/all.css">
+</head>
+<body>
+    <div id="main">
+        <!-- heaer -->
+        <div id="header" style="background-image: url(./assets/image/parallax1.jpg);" class="image-background opacity-min">                
+                <span class="logo"><b>My Blog</b></span>
+        </div>
+
+        <!-- navigation -->
+        <div id="nav-bar" class="nav--ontop">
+            <ul>
+                <li><a class="btn" href="#">Home</a></li>
+                <li><a class="btn" href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a class="btn"href="#portfolio"><i class="fa fa-th"></i> Portfolio</a></li>
+                <li><a class="btn" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="nav-bar__searchBtn btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="nav-bar__mobileMenuBtn btn"><i class="fa-solid fa-bars" onclick="showMenu()"></i></button>
+        </div>
+        <!-- content -->
+        <div id="content">
+            <!--about -->
+            <div id="about">
+                <div class="container--limit">
+                    <h2 class="content__title">About Me</h2>
+                    <h3 class="content__subTitle">I love guitar and programming</h3>
+                    <p>Hello, I am Ja Khang. You can call me Ja, this is way that my friends calling me and it sound not bad. Currently, I am learning information technology in Nong Lam University Ho Chi Minh City. It really isn’t great school to learn progamming and the learning environment is not really stressful with me. However i still try to learning every to get a good job. My purpose is becoming a full-stack developer. This is the first year, I leave home and everything is strange but i can adapt to new life. I think i am a quiet person but somehow i have great friends. We have wonderfull trips together. I hope we can maintain our friendship. I had to face difficulties, wonderfully, a my friend, she shared and helped me overcome. there was a time, I think our relationship is very good, we spent a lot of time chating, sharing everything together. I think i have like her. Currently, we rarely inbox. Badly …</p>
+                    <div class="row">
+                        <div class="column column-2">
+                            <img src="./assets/image/avatar_hat.jpg" alt="avatar" class="full-image hover-opacity-off opacity-min" onclick="onClick(this)">
+                            <p class="p-center grap"><b><i class="fa fa-user"></i>Ja Khang</b></p><br>
+                        </div>
+    
+                        <div class="column column-2">
+                            <p>Hello, I am Ja Khang. You can call me Ja, this is way that my friend calling me and it sound not bad. Currently, I am learning information technology in Nong Lam University Ho Chi Minh City. It really isn’t great school to learn progamming and the learning environment is not really stressful with me. However i still try to learning every to get a good job. This is the first year, I leave home and everything is strange but i can adapt to new life. I think i am a quiet person but somehow i have great friends. We have wonderfull trips together. I hope we can maintain our friendship. I had to face difficulties, wonderfully, a my friend, she shared and helped me overcome. there was a time, I think our relationship is very good, we spent a lot of time chating, sharing everything together. I think i have like her. Currently, we rarely inbox. Badly … Hope everything will be ok</p>
+                        </div>
+                    </div>
+                    <!-- skill -->
+                    <p>Im realy goot at</p>
+                    <div class="row about__skill">    
+                        <p><i class="fa-solid fa-guitar"></i>Guitar</p>
+                        <div class="percent-bar"><div class="percent" style="width: 70% ;">70%</div></div>
+                        <p><i class="fa-solid fa-code"></i>programming</p>
+                        <div class="percent-bar"><div class="percent" style="width: 60%;">60%</div></div>
+                        <p><i class="fa-solid fa-gamepad"></i>Wild Rift</i></p>
+                        <div class="percent-bar"><div class="percent" style="width: 50%;">50%</div></div>
+                    </div>
+                </div>
+                <!-- interact -->
+                <div class="about__interact">
+                    <div class="interact__element">
+                        <span>50+</span><br>
+                        Friends
+                    </div>
+                    <div class="interact__element">
+                        <span>20+</span><br>
+                        Projects Done
+                    </div>
+                    <div class="interact__element">
+                        <span>89+</span><br>
+                        Happy Clients
+                    </div>
+                    <div class="interact__element">
+                        <span>1</span><br>
+                        Crush
+                    </div>
+                </div>
+            </div>
+
+            <!-- portfolio -->
+            <div id="portfolio">
+                <div class="heading-image image-background opacity-min" style="background-image: url(./assets/image/parallax2.jpg);">
+                    <h1 class="image__title">portfolio</h1>
+                </div>
+                <div class="container--limit">
+                    <h2 class="content__title">Some my picture</h2>
+                    <h3 class="content__subTitle">Click on the images to make them bigger</h3>
+                    <div class="row">
+                        <div class="column column-4">
+                            <img src="./assets/image/p1.jpg" alt="My home town" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                        <div class="column column-4">
+                            <img src="./assets/image/p2.jpg" alt="Land Mark 81" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                        <div class="column column-4">
+                            <img src="./assets/image/p3.jpg" alt="Working with me" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                        <div class="column column-4">
+                            <img src="./assets/image/p4 (1).jpg" alt="Tri An lake" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column column-4">
+                            <img src="./assets/image/p5.jpg" alt="My hight school" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                        <div class="column column-4">
+                            <img src="./assets/image/p6.jpg" alt="Sky is great" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)" >
+                        </div>
+                        <div class="column column-4">
+                            <img src="./assets/image/p7.jpg" alt="" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                        <div class="column column-4">
+                            <img src="./assets/image/p8.jpg" alt="" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                    </div>
+
+                    <div class="row more-image">
+                        <div class="column column-4">
+                            <img src="./assets/image/p9.jpg" alt="Otasoc" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                        <div class="column column-4">
+                            <img src="./assets/image/p10.jpg" alt="A day picnic" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)" >
+                        </div>
+                        <div class="column column-4">
+                            <img src="./assets/image/p11.jpg" alt="" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                        <div class="column column-4">
+                            <img src="./assets/image/p12.jpg" alt="I love guitar" class="full-image hover-opacity-on js-zoom-image grayscale" onclick="onClick(this)">
+                        </div>
+                    </div>
+
+
+                    <div id="modal-container">
+                        <div id="modal" class="animation--fade">
+                            <div>
+                                <img src="" alt="" id="js-show-image" class="full-image">
+                            </div>
+                            <div id="modal__caption"> Hi Hi</div>
+                        </div>
+                    </div>
+
+                    <button class="load-more-btn btn" id="js-load-more-btn">Load more</button>
+                </div>
+                <!--contact-->
+                <div id="contact">
+                    <div class="heading-image image-background opacity-min" style="background-image: url(./assets/image/parallax3.jpg);">
+                        <h1 class="image__title">Contact</h1>
+                    </div>
+                    <div class="container--limit">
+                        <h2 class="content__title">WHERE I WORK</h2>
+                        <h3 class="content__subTitle">I'd love your feedback!</h3>
+                        <div class="contact-container">
+                            <div class="contact__info">
+                                <div class="info__item"><i class="fa-solid fa-location-dot"></i> Ho Chi Minh, VN </div>
+                                <div class="info__item"><i class="fa-solid fa-phone"></i> Phone: +00 151515 <br></div>
+                                <div class="info__item"><i class="fa-solid fa-envelope"></i> Email: kamilionbc@gmail.com</div>
+                            </div>
+                            <div class="row">
+                                <form action="" class="contact__send">
+                                    <p class="">Would you like a cup of milk tea <i class="fa-solid fa-glass-water"> ?</i>or leave me a note:</p>
+                                    <div class="row">
+                                        <div class="column column-2">
+                                            <input type="text" placeholder="Name" class="text-field" id="input-name">
+                                        </div>
+
+                                        <div class="column column-2">
+                                            <input type="email" placeholder="Email" class="text-field" id="input-email">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column-1">
+                                            <textarea name="massage" id="input-massage" cols="30" rows="10" class="text-field" placeholder="Massage"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="row"> 
+                                        <button type="button" class="btn send-btn" id="js-send-btn"><i class="fa-solid fa-paper-plane" onclick="sendEmail()"></i>Send Massage</button> 
+                                    </div>
+                                </form>
+                                <div class="column">
+                                    <img src="./assets/image/map.jpg" alt="" class="full-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="opacity-min hover-opacity-off">
+                <p>
+                    <a href="https://www.facebook.com/khang.ngo.549668"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/gokhang12300/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://www.pinterest.com/kamilionbc/_saved/"><i class="fa-brands fa-pinterest-square"></i></a>
+                </p>
+
+                <p>Powered by me</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // change type navigation
+        window.onscroll = function(){changeType()};
+        var navBar = document.getElementById("nav-bar");
+        var limit = 100
+        function changeType(){
+            if(isOpen || document.body.scrollTop >= limit || document.documentElement.scrollTop >= limit){
+                navBar.classList.remove("nav--ontop");
+                navBar.classList.add("animation--flyin");    
+            }
+            else {
+                navBar.classList.remove("animation--flyin");
+                navBar.classList.add("nav--ontop");
+            }   
+        }
+
+        // zoom image         
+        var modalContainer = document.getElementById("modal-container");
+        var showImage = document.getElementById("js-show-image");
+        var modal = document.getElementById("modal");
+        var caption = document.getElementById("modal__caption");
+        modal.addEventListener('click', function(event){
+                    event.stopPropagation();
+        });
+        modalContainer.addEventListener('click', function(){
+            modalContainer.style.display ="none";
+        })
+        function onClick(element){
+            showImage.src = element.src;
+            modalContainer.style.display = 'block';
+            caption.innerHTML = element.alt;
+        }
+
+        //show menu
+        var isOpen = false;
+        navBar = document.getElementById("nav-bar");
+        function showMenu(){
+            if(isOpen){
+                isOpen = false;
+                navBar.style.height = "43px";
+                changeType()
+            } else{
+                isOpen = true;
+                navBar.style.height = "auto";
+                changeType();
+            }
+        }
+
+        // loading more
+        var isLoadingMore = false;
+        var loadmoreBtn = document.getElementById("js-load-more-btn");
+        loadmoreBtn.addEventListener('click', function(){
+            var loadmoreImage = document.getElementsByClassName('more-image');
+            if(!isLoadingMore){
+                loadmoreBtn.innerHTML = "Load more";
+                isLoadingMore = true;
+                for(var row of loadmoreImage)
+                    row.style.display = 'none';
+            } else{
+                isLoadingMore = false;
+                loadmoreBtn.innerHTML = "Load less";
+                for(var row of loadmoreImage)
+                    row.style.display = 'block';
+            }
+        });
+        
+        
+    </script>
+
+    <!-- send email -->
+
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+   
+    <script type="text/javascript">
+        var sendBtn = document.getElementById('js-send-btn');
+        sendBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            var name = document.getElementById('input-name').value;
+            var email = document.getElementById('input-email').value;
+            var massage = document.getElementById('input-massage').value;
+            Email.send({
+            SecureToken : "1ebd13ef-46ce-4d91-af92-78bea1b46986",
+            To : 'jblogsendmassage@gmail.com',
+            From : "jblogsendmassage@gmail.com",
+            Subject : "Conatact from " + email,
+            Body : "Hello I am " + name + "\n" + massage
+        }).then(
+        message => alert(message)
+        );
+
+        });
+
+    </script>
+</body>
+</html>
